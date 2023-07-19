@@ -23,6 +23,9 @@ for i in range(5):
 for number in even_number:
     print(separator)
     print(f'\nEstos son los números pares ingresados {number}.')
+if not even_number:
+    print(separator)
+    print('\nNo se ingresaron números pares.')
 
 print(separator)
 
