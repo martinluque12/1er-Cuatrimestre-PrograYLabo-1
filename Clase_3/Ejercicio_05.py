@@ -13,8 +13,6 @@ for i in range(5):
     while True:
         try:
             entered_number = int(input('\n\nIngrese un numero entero > ').strip())
-            while entered_number < 0:
-                entered_number = int(input('\n¡Error! Debe ingresar solo 5 números enteros, vuelva a intentarlo > ').strip())
             break
         except ValueError:
             print('\n¡Error! Debe ingresar números enteros.')
