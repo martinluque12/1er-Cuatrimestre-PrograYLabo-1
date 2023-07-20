@@ -1,7 +1,7 @@
 '''
 1G MARTIN LUQUE 
 
-Ejercicio 01 listas
+Ejercicio 09  Con listas
 
 Una concesionaria de autos nos pide desarrollar un sistema para controlar el stock de autos
 que tienen disponible a la venta.
