@@ -10,9 +10,10 @@ separator = '\n*****************************************************************
 
 numbers = []
 
-flag_first_entry = True
-min_entered_number = None
-max_entered_number = None
+flag_max_number = True
+min_number = None
+flag_min_number = True
+max_number = None
 
 while True:
 
@@ -34,16 +35,17 @@ while True:
         break
 
 for number in numbers:
-    if flag_first_entry or number > max_entered_number:
-        max_entered_number = number
-        flag_first_entry = False
-    else:
-        min_entered_number = number
+    if flag_max_number or number > max_number:
+        max_number = number
+        flag_max_number = False
+    elif flag_min_number or number < min_number:
+        min_number = number
+        flag_min_number = False
 
-difference = max_entered_number - min_entered_number
+difference = max_number - min_number
 print(separator)
 
-print('\n\nEl numero mas chico ingresado es {0} y el mas grande es {1}'.format(min_entered_number, max_entered_number))
+print('\n\nEl numero mas chico ingresado es {0} y el mas grande es {1}'.format(min_number, max_number))
 print('\nY su diferencia es {0}'.format(difference))
 
 print(separator)
