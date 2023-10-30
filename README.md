@@ -17,5 +17,5 @@
 * Expresiones regulares (RegEx).
 * Archivos (Json, CSV).
 * Algoritmos de ordenamientos.
-* Python orientado a objetos.
+* POO
 * Excepciones.
