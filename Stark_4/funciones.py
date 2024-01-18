@@ -230,6 +230,7 @@ def save_file(name_file: str, content: str) -> bool:
     else:
         print_data(f"\nError al crear el archivo: {file_path}")
         return False
+    
 
 def capitalize_word(string: str) -> str:
     """Pone en mayúscula cada primer letra de una cadena de texto.
