@@ -1,31 +1,34 @@
+import re
 from validations import *
 
-def castear_int(entero_str: str) -> int:
-    """Castea una variable str que contiene solo caracteres numéricos a int.
+
+def castear_int(number: str) -> int:
+    """Castea una variable str que representa un numero entero a int.
 
     Args:
-        entero_str (str): La variable a castear.
+        number (str): La variable str que representa un numero entero.
 
     Returns:
-        int: La variable casteada a int si es que contiene solo caracteres numéricos,
-            de lo contrario False.
+        int: La variable casteada a int o 0 en caso de error.
     """
-    if validate_int(entero_str):
-        return int(entero_str)
+    if validate_int(number):
+        return int(number)
+    else:
+        return 0
+
+
+def castear_float(number: str) -> float | int:
+    """Castea una variable str que representa un numero de punto flotante a float.
+
+    Args:
+        number (str): La variable str a castear.
+
+    Returns:
+        float | int: La variable casteada o 0 en caso de error.
+    """
+    if validate_float(number):
+        return float(number)
     else:
         return 0
     
-
-def castear_float(flotante_str: str) -> float | int:
-    """Castea una variable str que contiene  un número con punto flotante.
-
-    Args:
-        flotante_str (str): La variable a castear.
-
-    Returns:
-        float | int: La variable casteada a float o 0 si no pasa la validación.
-    """
-    if validate_float(flotante_str):
-        return float(flotante_str)
-    else:
-        return 0
+    

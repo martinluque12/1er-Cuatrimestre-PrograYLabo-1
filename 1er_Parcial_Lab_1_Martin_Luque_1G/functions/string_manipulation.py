@@ -1,5 +1,6 @@
 from validations import *
 
+
 def capitalize_word(string: str) -> str:
     """Pone en mayúscula cada primer letra de una cadena de texto.
 
@@ -22,3 +23,6 @@ def capitalize_word(string: str) -> str:
         string_capitalizado = " ".join(word + "" for word in string_capitalizado)
 
         return string_capitalizado
+    
+    else:
+        return ""
